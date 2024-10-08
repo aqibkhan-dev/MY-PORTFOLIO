@@ -338,7 +338,7 @@ span {
 /* Service section */
 
 .services {
-    background: var(--second-bg-color);
+    /* background: var(--second-bg-color); */
 }
 
 .heading {
@@ -349,7 +349,7 @@ span {
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
@@ -360,6 +360,7 @@ span {
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease;
+    max-width: 345px;
 }
 
 .service-box:hover {
@@ -421,6 +422,12 @@ span {
         text-align: center;
     }
 
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:400px){
     .services-container {
         grid-template-columns: repeat(1, 1fr);
     }
